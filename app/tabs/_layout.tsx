@@ -19,13 +19,7 @@ const TabsLayout = () => {
           tabBarIcon: ({ color }) => <Ionicons size={28} name="film-outline" color={color} />,
         }}
       />
-      <Tabs.Screen
-        name="configuracion/index"
-        options={{
-          title: 'Configuracion',
-          tabBarIcon: ({ color }) => <Ionicons size={28} name="construct-outline" color={color} />,
-        }}
-      />
+      
     </Tabs>
   )
 }
