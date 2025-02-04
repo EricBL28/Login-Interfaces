@@ -1,7 +1,7 @@
 import { View, Text, TextInput, ScrollView, Pressable } from 'react-native';
 import React from 'react'
 import { GlobalStyles } from '../theme/GlobalStyles';
-
+import { Boton } from '../components/Boton'
 import { Link } from "expo-router";
 
 
@@ -12,12 +12,7 @@ const login = () => {
 
         <TextInput style={GlobalStyles.textoIntr} placeholder='Contraseña' secureTextEntry={true}/>
 
-        <Pressable>
-          <Link style={GlobalStyles.linkeo} href='/tabs'>
-          <Text style={GlobalStyles.textoEntrar}>ACCEDER</Text>
-          </Link>
-        </Pressable>
-
+        <Boton label='Acceder' width={200} backgroundColor='naranja' link='./tabs'></Boton>
 
     </ScrollView>
 

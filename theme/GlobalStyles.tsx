@@ -45,5 +45,28 @@ export const GlobalStyles = StyleSheet.create({
         color: Colors.orangeContainer,
         opacity: 0.7,
         fontWeight: 'bold',
-    }
+    },
+    boton: {
+        width: 125,
+        height: 100,
+        textAlign: 'center',
+        padding: 0,
+        fontSize: 17,
+        borderRadius: 30,
+        backgroundColor: Colors.orangeInput,
+        opacity: 0.7,
+        
+        fontFamily: 'MoreSugar',
+        fontWeight: 'bold',
+    },
+    botonAzul:
+    {
+        marginTop:15,
+        backgroundColor: Colors.blueLight,
+        color: Colors.black,
+        textAlign: 'center',
+        padding: 15,
+        width: 'auto',
+        height: 59,
+    },
 })
