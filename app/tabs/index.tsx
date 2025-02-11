@@ -7,7 +7,7 @@ const ScreenPrincipal = () => {
   return (
     <View style={GlobalStyles.containerCentrado}>
 
-      <Boton label='Login' width={200} backgroundColor='naranja' link='../login'></Boton>
+      <Boton label='Log out' width={200} backgroundColor='naranja' link='../login'></Boton>
     </View>
   )
 }

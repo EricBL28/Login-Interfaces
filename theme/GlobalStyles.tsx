@@ -14,7 +14,6 @@ export const GlobalStyles = StyleSheet.create({
         fontSize: 22
     },
     textoIntr: {
-
         fontSize: 40,
         fontWeight: 'bold',
         textAlign: "center",
@@ -37,25 +36,23 @@ export const GlobalStyles = StyleSheet.create({
         opacity: 0.7,
         fontWeight: 'bold',
     },
-    textoEntrar:{
-        
-        fontSize: 25,
+    btnText:{
+        fontSize: 20,
         textAlign:'center',
         justifyContent:'center',
         color: Colors.orangeContainer,
-        opacity: 0.7,
+        opacity: 1,
         fontWeight: 'bold',
     },
-    boton: {
+    btn: {
         width: 125,
-        height: 100,
+        height: 50,
         textAlign: 'center',
         padding: 0,
         fontSize: 17,
         borderRadius: 30,
-        backgroundColor: Colors.orangeInput,
-        opacity: 0.7,
-        
+        backgroundColor: Colors.blueDark,
+        opacity: 1,
         fontFamily: 'MoreSugar',
         fontWeight: 'bold',
     },
