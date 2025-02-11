@@ -14,7 +14,7 @@ export const GlobalStyles = StyleSheet.create({
         fontSize: 22
     },
     textoIntr: {
-        fontSize: 40,
+        fontSize: 20,
         fontWeight: 'bold',
         textAlign: "center",
         marginTop: 20,
@@ -37,7 +37,7 @@ export const GlobalStyles = StyleSheet.create({
         fontWeight: 'bold',
     },
     btnText:{
-        fontSize: 20,
+        fontSize:20,
         textAlign:'center',
         justifyContent:'center',
         color: Colors.orangeContainer,

@@ -1,13 +1,26 @@
-import { View, Text } from 'react-native'
+import { View, Text, Pressable } from 'react-native'
 import React from 'react'
 import { GlobalStyles } from '@/theme/GlobalStyles'
 import { Boton } from '../../components/Boton'
+import { getAuth } from 'firebase/auth';
+import { auth } from '@/FireBaseconfig';
+import { router } from 'expo-router';
+
+
+
 
 const ScreenPrincipal = () => {
-  return (
-    <View style={GlobalStyles.containerCentrado}>
+  getAuth().onAuthStateChanged((user) => {
+    if (!user) router.replace('/');
+  });
 
-      <Boton label='Log out' width={200} backgroundColor='naranja' link='../login'></Boton>
+  return (
+    <View style={GlobalStyles.containerCentrado} >
+
+      <Pressable style={GlobalStyles.btn} onPress={() => auth.signOut()}>
+        <Text style={GlobalStyles.btnText}>Cerrar sesión</Text>
+      </Pressable>
+
     </View>
   )
 }
