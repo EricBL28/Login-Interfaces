@@ -33,7 +33,6 @@ export default function login() {
       Alert.alert("Error al registrar el usuario", error.message);
     }
 
-
   }
 
   return (
@@ -42,8 +41,12 @@ export default function login() {
 
       <TextInput style={GlobalStyles.textoIntr} placeholder='Contraseña' value={password} onChangeText={setPassword} secureTextEntry={true} />
 
-      <Pressable style={GlobalStyles.btn} onPress={register}>
+      <Pressable style={GlobalStyles.btn} onPress={logIn}>
           <Text style={GlobalStyles.btnText}>Login</Text>
+        </Pressable>
+
+        <Pressable style={GlobalStyles.btn} onPress={register}>
+          <Text style={GlobalStyles.btnText}>register</Text>
         </Pressable>
     </ScrollView>
 

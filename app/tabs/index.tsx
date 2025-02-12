@@ -6,9 +6,6 @@ import { getAuth } from 'firebase/auth';
 import { auth } from '@/FireBaseconfig';
 import { router } from 'expo-router';
 
-
-
-
 const ScreenPrincipal = () => {
   getAuth().onAuthStateChanged((user) => {
     if (!user) router.replace('/');
@@ -16,11 +13,9 @@ const ScreenPrincipal = () => {
 
   return (
     <View style={GlobalStyles.containerCentrado} >
-
       <Pressable style={GlobalStyles.btn} onPress={() => auth.signOut()}>
         <Text style={GlobalStyles.btnText}>Cerrar sesión</Text>
       </Pressable>
-
     </View>
   )
 }
